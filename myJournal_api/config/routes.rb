@@ -6,10 +6,8 @@
   delete '/logout/:id' => 'auth#logout'
 
   resources :users, except: [:new, :edit]
-  resources :outlines, except: [:new, :edit]
-  resources :stories, except:[:new, :edit]
-  resources :clues, except:[:new, :edit]
-  resources :contributions, except:[:new, :edit]
+  resources :entries, except: [:new, :edit]
+
 end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
