@@ -1,4 +1,4 @@
 #
-class EntrySerializer < User::Serializer
-  attributes :jphost, :title, :user_id
+class EntrySerializer < ActiveModel::Serializer
+  attributes :id, :title, :isbn
 end

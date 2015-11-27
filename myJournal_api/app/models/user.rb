@@ -1,3 +1,7 @@
+#
 class User < ActiveRecord::Base
-  had_many: entries
+  include Authentication
+
+  has_many :entries
+  has_one :quick_post
 end

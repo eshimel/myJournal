@@ -1,4 +1,5 @@
-class ApplicationController < ActionController::Base
+#
+class ApplicationController < ActionController::API
   # Defaults for API requests
   before_action :api_request_settings
   def api_request_settings
@@ -35,4 +36,3 @@ class ApplicationController < ActionController::Base
   private :authenticate, :current_user, :record_not_found
   private :ssl_configured?, :api_request_settings
 end
-
