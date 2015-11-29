@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   # patch '/confirm' => 'auth#confirm'
   post '/login' => 'auth#login'
   delete '/logout/:id' => 'auth#logout'
-
   resources :users, except: [:new, :edit]
 
   resources :entries, except: [:new, :edit]
+  resources :quick_posts, except: [:new, :edit]
 end

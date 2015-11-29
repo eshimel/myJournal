@@ -3,17 +3,21 @@ class EntriesController < OpenReadController
   before_action :set_entry, only: [:update, :destroy]
 
   # GET /entries
-  def index
-    @entries = Entry.all
-
-    render json: @entries
+   def index
+    if(current_user)
+      @entries = current_user.entries
+    else
+      @entries = Entry.all
+    end
+    render json: @clues
   end
 
   # GET /entries/1
   def show
-    @entry = Entry.find(params[:id])
+    def show
 
-    render json: @entry
+    render json: current_user.entry
+  end
   end
 
   # POST /entries
@@ -53,3 +57,8 @@ class EntriesController < OpenReadController
 
   private :set_entry, :entry_params
 end
+
+
+#Users receive clues from the previous user.
+  #Users submit clues for the next user.
+
