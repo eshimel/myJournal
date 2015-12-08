@@ -1,4 +1,4 @@
 #
 class EntrySerializer < ActiveModel::Serializer
-  attributes :id, :title, :jphost
+  attributes :id, :title, :jpost
 end
