@@ -9,7 +9,7 @@ class EntriesController < OpenReadController
     else
       @entries = Entry.all
     end
-    render json: @clues
+    render json: @entries
   end
 
   # GET /entries/1
