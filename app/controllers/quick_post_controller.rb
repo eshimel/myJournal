@@ -3,26 +3,26 @@ class QuickPostController < ApplicationController
 
   # GET /quick_posts
   def index
-    @quickPosts = QuickPost.all
+    @quick_posts = Quick_post.all
 
-    render json: @quickPosts
+    render json: @quick_posts
   end
 
   # GET /quick_posts/1
   def show
-    @quickPost = QuickPost.find(params[:id])
+    @quickPost = Quick_post.find(params[:id])
 
-    render json: @quickPost
+    render json: @quick_post
   end
 
   # POST /quick_posts
   def create
-    @quickPost = current_user.quickPosts.new(quick_post_params) #makes this, this user's quick_post.
+    @quickPost = current_user.quick_posts.new(quick_post_params) #makes this, this user's quick_post.
 
     if @quickPost.save
-      render json: @quickPost, status: :created, location: @quickPost
+      render json: @quick_post, status: :created, location: @quick_post
     else
-      render json: @quickPost.errors, status: :unprocessable_entity
+      render json: @quick_post.errors, status: :unprocessable_entity
     end
   end
 
