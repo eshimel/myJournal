@@ -15,3 +15,4 @@ end
 
 one = Entry.create!(title: 'Tuesday', jpost: "I truely hope that this upcoming Tuesday is not a repeate of the last project week.  It sets up a stressful Wednesday.")
 
+end
