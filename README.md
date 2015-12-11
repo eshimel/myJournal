@@ -47,6 +47,7 @@ This is the second project that I created for the project 2 prompt.  StorWe, my 
 
 link to frontEnd Repo  https://github.com/eshimel/myJournal_frontend-aSQL
 
+Link to hosted frontend: http://eshimel.github.io/myJournal_frontend-aSQL
 
 I used the following curl requests a lot to test this app.
 
