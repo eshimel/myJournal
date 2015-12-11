@@ -21,3 +21,4 @@ three = Entry.create!(title: 'Next day', jpost: "Its Wednesssssssday! Much bette
 
 four = Entry.create!(title: 'feelings', jpost: "I really hope this app works! I need a boost.  Sometimes I feel like I'm where I need to be and sometimes I feel behind, but I really love programming!  She's a cold-hearted mistress."  )
 
+end
