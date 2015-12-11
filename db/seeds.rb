@@ -21,11 +21,3 @@ three = Entry.create!(title: 'Next day', jpost: "Its Wednesssssssday! Much bette
 
 four = Entry.create!(title: 'feelings', jpost: "I really hope this app works! I need a boost.  Sometimes I feel like I'm where I need to be and sometimes I feel behind, but I really love programming!  She's a cold-hearted mistress."  )
 
-curl --request POST --header "Authorization: Token token=8910009b754af6e57f7eaf32dc344750" --header "Content-Type: application/json" -d '{
-  "entry": {
-    "title":"Yes!",
-    "jpost":"Maybe, there are not lost causes.  I really hope this app works! I need a boost.  Sometimes I feel like I am where I need to be and sometimes I feel behind, but I really love programming!  She can be  a cold-hearted mistress."
-  }
-}'  http://localhost:3000/entries
-
-curl --header "Authorization: Token token=8910009b754af6e57f7eaf32dc344750" http://localhost:3000/entries
