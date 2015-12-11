@@ -1,3 +1,12 @@
+Two Github repos (one for your front-end and one for your back-end), with frequent commits dating back to the very beginning of the project. Each repo will need a README.md file with a link to the other repo. Your front-end repo's README should also have
+An explanation of the what the app does and how it works, the approach taken in building it, and any unsolved problems that you hit.
+User stories written for your app.
+At least one wireframe (or a link to one) that you've created to plan out your app.
+A link to the live application.
+
+
+
+
 
 # User authentication
 
