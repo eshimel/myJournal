@@ -52,4 +52,4 @@ class QuickPostController < ApplicationController
 
   private :set_quick_post, :quick_post_params
 end
-end
+
