@@ -52,7 +52,7 @@ class EntriesController < OpenReadController
   end
 
   def entry_params
-    params.require(:entry).permit(:title, :jpost)
+    params.require(:entry).permit(:title, :jpost, :rating, :date)
   end
 
   private :set_entry, :entry_params
